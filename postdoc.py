@@ -1,6 +1,7 @@
 import requests
+import config
 
-postman_url = "#"
+postman_url = config.postman_url
 
 r = requests.get(postman_url)
 postman_data = r.json()
